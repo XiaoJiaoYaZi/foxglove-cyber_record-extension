@@ -1,0 +1,20 @@
+{
+  "id": "liqiudong.foxglove-cyberrecord",
+  "name": "Apollo Cyber Record",
+  "description": "Read Apollo Cyber RT .record files directly in Foxglove, with protobuf schemas recovered from each channel.",
+  "publisher": "liqiudong",
+  "homepage": "https://github.com/liqiudong/foxglove-cyberrecord",
+  "readme": "https://raw.githubusercontent.com/liqiudong/foxglove-cyberrecord/main/README.md",
+  "changelog": "https://raw.githubusercontent.com/liqiudong/foxglove-cyberrecord/main/CHANGELOG.md",
+  "license": "Apache-2.0",
+  "version": "0.1.0",
+  "sha256sum": "122b846773c420583f9d938542fc7c83316a65c38a126d68b409d7fd29a69e58",
+  "foxe": "https://github.com/liqiudong/foxglove-cyberrecord/releases/download/v0.1.0/liqiudong.foxglove-cyberrecord-0.1.0.foxe",
+  "keywords": [
+    "apollo",
+    "cyber",
+    "cyberrecord",
+    "record",
+    "data-loader"
+  ]
+}

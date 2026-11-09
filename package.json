@@ -1,0 +1,36 @@
+{
+  "name": "foxglove-cyberrecord",
+  "displayName": "Apollo Cyber Record",
+  "description": "Read Apollo Cyber RT .record files directly in Foxglove, with protobuf schemas recovered from each channel.",
+  "publisher": "liqiudong",
+  "homepage": "https://github.com/liqiudong/foxglove-cyberrecord",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "main": "./dist/extension.js",
+  "files": [
+    "dist",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "keywords": [
+    "apollo",
+    "cyber",
+    "cyberrecord",
+    "record",
+    "data-loader"
+  ],
+  "scripts": {
+    "build:wasm": "cargo build --manifest-path rust/Cargo.toml --release --target wasm32-unknown-unknown",
+    "build": "npm run build:wasm && foxglove-extension build",
+    "foxglove:prepublish": "npm run build:wasm && foxglove-extension build --mode production",
+    "local-install": "foxglove-extension install",
+    "package": "foxglove-extension package",
+    "test": "cargo test --manifest-path rust/Cargo.toml",
+    "check:wasm": "cargo check --manifest-path rust/Cargo.toml --target wasm32-unknown-unknown"
+  },
+  "devDependencies": {
+    "@foxglove/extension": "3.5.0",
+    "create-foxglove-extension": "1.3.2",
+    "typescript": "5.9.3"
+  }
+}

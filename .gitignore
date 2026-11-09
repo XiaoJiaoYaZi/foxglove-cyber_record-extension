@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.foxe
+rust/target/
+tmp/
+.DS_Store

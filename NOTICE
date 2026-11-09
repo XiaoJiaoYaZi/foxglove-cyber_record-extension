@@ -1,0 +1,15 @@
+Apollo Cyber Record for Foxglove
+Copyright 2026 the contributors
+
+The Cyber record container format and the Apollo `record.proto` /
+`proto_desc.proto` message definitions were implemented from the publicly
+available Apollo Cyber RT project:
+
+  https://github.com/ApolloAuto/apollo
+
+Apollo is Copyright 2018 The Apollo Authors and is licensed under the Apache
+License, Version 2.0. No Apollo source code is included in this repository; the
+format implementation is an independent Rust implementation.
+
+Foxglove is a trademark of Foxglove Technologies, Inc. This project is not
+affiliated with or endorsed by Foxglove or Apollo.

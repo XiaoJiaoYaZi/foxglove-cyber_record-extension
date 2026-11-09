@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+          components: rustfmt, clippy
+
+      - name: Rust formatting
+        run: cargo fmt --manifest-path rust/Cargo.toml --all -- --check
+
+      - name: Rust tests
+        run: cargo test --manifest-path rust/Cargo.toml
+
+      - name: Rust clippy (host)
+        run: cargo clippy --manifest-path rust/Cargo.toml --all-targets -- -D warnings
+
+      - name: Rust clippy (wasm)
+        run: cargo clippy --manifest-path rust/Cargo.toml --target wasm32-unknown-unknown -- -D warnings
+
+      - run: npm ci
+
+      - name: Build extension
+        run: npm run build
+
+      - name: Package .foxe
+        run: npm run package
+
+      - name: Upload .foxe
+        uses: actions/upload-artifact@v4
+        with:
+          name: cyberrecord-foxe
+          path: "*.foxe"
+          if-no-files-found: error
