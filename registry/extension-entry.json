@@ -8,7 +8,7 @@
   "changelog": "https://raw.githubusercontent.com/XiaoJiaoYaZi/foxglove-cyber_record-extension/main/CHANGELOG.md",
   "license": "Apache-2.0",
   "version": "0.1.0",
-  "sha256sum": "c3ab079610e91e62df5ec9beb95778af9d4c08508c92567a401806564b34e67f",
+  "sha256sum": "905c8ba831d1b6c8e5e25ce0d1a481e8cf6c1bf44a8f78a996e56e8417751697",
   "foxe": "https://github.com/XiaoJiaoYaZi/foxglove-cyber_record-extension/releases/download/v0.1.0/xiaojiaoyazi.foxglove-cyberrecord-0.1.0.foxe",
   "keywords": [
     "apollo",
