@@ -25,7 +25,7 @@ Foxglove can decode messages with its built-in protobuf support.
 ### From a release
 
 1. Download the latest `*.foxe` file from
-   [Releases](https://github.com/liqiudong/foxglove-cyberrecord/releases).
+   [Releases](https://github.com/XiaoJiaoYaZi/foxglove-cyber_record-extension/releases).
 2. In Foxglove Desktop, open **Settings -> Extensions** and install the file.
 3. Open a `.record` file with **File -> Open**.
 
@@ -50,7 +50,7 @@ npm install
 npm run package
 ```
 
-This produces `liqiudong.foxglove-cyberrecord-<version>.foxe` in the project
+This produces `xiaojiaoyazi.foxglove-cyberrecord-<version>.foxe` in the project
 root. Install it from Foxglove's extension settings.
 
 For iterative development:
@@ -168,13 +168,13 @@ Record the SHA-256 of the exact file you upload. The registry entry must match
 that release asset:
 
 ```sh
-sha256sum liqiudong.foxglove-cyberrecord-0.1.0.foxe
+sha256sum xiaojiaoyazi.foxglove-cyberrecord-0.1.0.foxe
 ```
 
 ### Share with an organization
 
 ```sh
-foxglove extensions publish ./liqiudong.foxglove-cyberrecord-0.1.0.foxe
+foxglove extensions publish ./xiaojiaoyazi.foxglove-cyberrecord-0.1.0.foxe
 ```
 
 See the [Foxglove publishing guide](https://docs.foxglove.dev/docs/extensions/publish)
@@ -186,7 +186,7 @@ and the [Foxglove CLI](https://github.com/foxglove/foxglove-cli).
    different account or organization, update `publisher` and `homepage` in
    `package.json` and rebuild before tagging.
 2. The extension ID is `<publisher>.<name>`, currently
-   `liqiudong.foxglove-cyberrecord`.
+   `xiaojiaoyazi.foxglove-cyberrecord`.
 3. Create a release tag, for example `v0.1.0`, and attach the `.foxe`.
 4. Add an entry to
    [`foxglove/extension-registry`](https://github.com/foxglove/extension-registry)

@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 license = "Apache-2.0"
 description = "Apollo Cyber RT record reader and Foxglove data loader"
-repository = "https://github.com/liqiudong/foxglove-cyberrecord"
+repository = "https://github.com/XiaoJiaoYaZi/foxglove-cyber_record-extension"
 
 [lib]
 crate-type = ["cdylib", "rlib"]

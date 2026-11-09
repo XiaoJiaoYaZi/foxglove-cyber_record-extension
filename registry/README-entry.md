@@ -3,5 +3,5 @@ Add this line to the "Extensions" list in the
 README, keeping the list alphabetical:
 
 ```markdown
-- [Apollo Cyber Record](https://github.com/liqiudong/foxglove-cyberrecord) - Read Apollo Cyber RT `.record` files with embedded protobuf schemas
+- [Apollo Cyber Record](https://github.com/XiaoJiaoYaZi/foxglove-cyber_record-extension) - Read Apollo Cyber RT `.record` files with embedded protobuf schemas
 ```
